@@ -2,8 +2,8 @@
 title: Michael Lin
 email: michaellam.lzc@gmail.com
 url: http://www.michaellin.me
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-skills: "Linux - Programming"
+description: "This is Michael's home page. I'm trying to be a awesome programer."
+skills: "Software Developer - Web Developer - Linux"
 meta_author: Lin Michael
 
 # Google webmaster tools
@@ -31,15 +31,16 @@ color:
 
 # Footer settings
 footer:
-  copyright: Michael Lin 2015
+  copyright: Michael Lin
   #location: Location
   social: Around the Web
   credits: Credits
+  license: License
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: https://twitter.com/Michael_LZC
+  - title: linkedin
+    url: https://ca.linkedin.com/in/michaellinlzc
   - title: facebook
     url: https://www.facebook.com/michael.lam.1650332
 #  - title: stack-overflow
@@ -56,6 +57,9 @@ social:
 
 # Credits content
 credits: 'Powered by Jekyll'
+
+# License content
+license:
 
 # Build settings
 markdown: kramdown
