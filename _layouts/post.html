@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body id="page-top" class="index">
+    {% include nav.html %}
+    {% include header.html %}
+
+    <!-- Post Page Header -->
+    <div class="my-post-header">
+        <div class="container text-center">
+            <h2>{{ page.title }}</h2>
+            <span>{{ page.date | date_to_string }}</span>
+        </div>
+    </div>
+
+    <!-- Post Page Body (Content) -->
+    <div class="container">
+        <div class="my-post-content">
+            {{ page.content }}
+        </div>
+    </div>
+
+    <!-- Footer -->
+    {% include comments.html %}
+    {% include footer.html %}
+    {% include modals.html %}
+    {% include js.html %}
+    </body>
+</html>

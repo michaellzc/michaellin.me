@@ -5,19 +5,17 @@
     <description>This is Michael&#39;s home page. I&#39;m trying to be a awesome programer.</description>
     <link>http://www.michaellin.me/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 27 Dec 2015 09:31:25 -0800</pubDate>
-    <lastBuildDate>Sun, 27 Dec 2015 09:31:25 -0800</lastBuildDate>
+    <pubDate>Sun, 27 Dec 2015 11:30:44 -0800</pubDate>
+    <lastBuildDate>Sun, 27 Dec 2015 11:30:44 -0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
-        <title>Project 1</title>
-        <description>First post</description>
-        <pubDate>Fri, 25 Dec 2015 00:00:00 -0800</pubDate>
-        <link>http://www.michaellin.me/announcement/2015/12/25/project-1/</link>
-        <guid isPermaLink="true">http://www.michaellin.me/announcement/2015/12/25/project-1/</guid>
+        <title>Hello World</title>
+        <description></description>
+        <pubDate>Sun, 27 Dec 2015 00:00:00 -0800</pubDate>
+        <link>http://www.michaellin.me/hello-world</link>
+        <guid isPermaLink="true">http://www.michaellin.me/hello-world</guid>
         
-        
-        <category>Announcement</category>
         
       </item>
     
