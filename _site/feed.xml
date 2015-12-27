@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Michael Lin</title>
+    <description>This is Michael&#39;s home page. I&#39;m trying to be a awesome programer.</description>
+    <link>http://www.michaellin.me/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 26 Dec 2015 23:13:02 -0800</pubDate>
+    <lastBuildDate>Sat, 26 Dec 2015 23:13:02 -0800</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Project 1</title>
+        <description>First post</description>
+        <pubDate>Fri, 25 Dec 2015 00:00:00 -0800</pubDate>
+        <link>http://www.michaellin.me/announcement/2015/12/25/project-1/</link>
+        <guid isPermaLink="true">http://www.michaellin.me/announcement/2015/12/25/project-1/</guid>
+        
+        
+        <category>Announcement</category>
+        
+      </item>
+    
+  </channel>
+</rss>
