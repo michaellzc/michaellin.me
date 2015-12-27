@@ -16,8 +16,8 @@ permalink: 2048-Embedded-Edition
 Honestly, I'm pretty bad at this game. Never got a chance to reach 2048 :(
 
 ##Setup
-###Stuff you need
-1. Download the source code
+###Stuff you need  
+1. Download the source code  
 ```
 $ git clone https://github.com/ExiaSR/2048_embedded_edition.git
 ```
