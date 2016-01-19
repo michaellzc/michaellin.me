@@ -3,11 +3,11 @@
     <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hello World</title>
+    <title>2048 Embedded Edition on Arduino</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="This is Michael's home page. I'm trying to be a awesome programer.">
     <meta name="author" content="Lin Michael">
-    <link rel="canonical" href="http://www.michaellin.me/hello-world">
+    <link rel="canonical" href="http://www.michaellin.me/2048-Embedded-Edition">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
@@ -79,17 +79,48 @@
     <!-- Post Page Header -->
     <div class="my-post-header success">
         <div class="container text-center">
-            <h2>Hello World</h2>
-            <span>27 Dec 2015</span>
+            <h2>2048 Embedded Edition on Arduino</h2>
+            <span>28 Dec 2015</span>
         </div>
     </div>
 
     <!-- Post Page Body (Content) -->
     <div class="container">
         <div class="my-post-content">
-            <p>Hi, I’m Michael, a student at the University of Alberta, major in Computing Science, and I’m learning to be an awesome programmer.</p>
+            <h1 id="embedded-edition">2048 Embedded Edition</h1>
+<hr />
+<p>2048 is one of the most popular mobile game in the world, so I decided to imagrate this amamzing game to Arduino. Just for my final project, also for fun.</p>
 
-<p>I’ll share my experience and knowledge at this website.</p>
+<h2 id="image">Image</h2>
+<p><img src="https://michaellin.me/img/2048_embedded_edition.jpg" alt="2048 image" /></p>
+
+<p>Honestly, I’m pretty bad at this game. Never got a chance to reach 2048 :(</p>
+
+<h2 id="setup">Setup</h2>
+<p>###Stuff you need<br />
+1. Download the source code<br />
+<code class="highlighter-rouge">
+$ git clone https://github.com/ExiaSR/2048_embedded_edition.git
+</code>
+2. Or download the zipped file.
+3. Edit the pin setting in config.h, in case you have different Arduino, or whatever..</p>
+
+<h3 id="compling">Compling</h3>
+<p>Builing with a Makefile is recommended.
+Open up the terminal, and run<br />
+<code class="highlighter-rouge">
+$ make upload
+</code><br />
+Or you may edit or rename the main.cpp by yourself, then use Arduino IDE to complie instead.</p>
+
+<h3 id="wiring-instruction">Wiring Instruction</h3>
+<p>Hardware you need: <br />
+1. Arduino board <br />
+2. LCD screen with ST7735 chip<br />
+3. A joystick<br />
+4. A push button<br />
+5. Serval wires</p>
+
 
         </div>
     </div>
@@ -102,7 +133,7 @@
 /***
 var disqus_config = function () {
 this.page.url = { page.url }; // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "/hello-world";; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.identifier = "/2048-Embedded-Edition";; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 */
 (function() { // DON'T EDIT BELOW THIS LINE
