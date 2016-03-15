@@ -1,6 +1,6 @@
 #My personal website
---
-###Info
+
+##Info
 
 This website is adapoted from jekyll and [Freelancer theme](https://github.com/jeromelachaud/freelancer-theme).
 
