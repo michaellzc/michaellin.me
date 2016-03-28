@@ -33,47 +33,50 @@
 </head>
 
     <body id="page-top" class="index">
-       <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="https://michaellin.me">Michael Lin</a>
-            </div>
+    <!-- Navigation -->
+ <nav class="navbar navbar-default navbar-fixed-top">
+     <div class="container">
+         <!-- Brand and toggle get grouped for better mobile display -->
+         <div class="navbar-header page-scroll">
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                 <span class="sr-only">Toggle navigation</span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+             </button>
+             <a class="navbar-brand" href="https://michaellin.me">Michael Lin</a>
+         </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="https://michaellin.me/img/resume.pdf">Resume</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#post">Post</a>
-                    </li>
-                <!--    <li class="page-scroll">
-                        <a href="#contact">Contact</a> -->
-                    </li>
-                    <li class="page-scroll">
-                        <a href="archive.md">Archive</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+         <!-- Collect the nav links, forms, and other content for toggling -->
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+             <ul class="nav navbar-nav navbar-right">
+                 <li class="hidden">
+                     <a href="#page-top"></a>
+                 </li>
+                 <li class="page-scroll">
+                     <a href="https://michaellin.me/img/resume.pdf">Resume</a>
+                 </li>
+                 <li class="page-scroll">
+                     <a href="https://github.com/ExiaSR">Github</a>
+                 </li>
+                 <li class="page-scroll">
+                     <a href="../#about">About</a>
+                 </li>
+                 <li class="page-scroll">
+                     <a href="../#post">Post</a>
+                 </li>
+             <!--    <li class="page-scroll">
+                     <a href="#contact">Contact</a> -->
+                 </li>
+                 <li class="page-scroll">
+                     <a href="#">Archive</a>
+                 </li>
+             </ul>
+         </div>
+         <!-- /.navbar-collapse -->
+     </div>
+     <!-- /.container-fluid -->
+ </nav>
 
 
     <!-- Post Page Header -->
@@ -87,17 +90,16 @@
     <!-- Post Page Body (Content) -->
     <div class="container">
         <div class="my-post-content">
-            <h1 id="embedded-edition">2048 Embedded Edition</h1>
-<hr />
+            <h2 id="embedded-edition">#2048 Embedded Edition</h2>
 <p>2048 is one of the most popular mobile game in the world, so I decided to imagrate this amamzing game to Arduino. Just for my final project, also for fun.</p>
 
-<h2 id="image">Image</h2>
-<p><img src="https://michaellin.me/img/2048_embedded_edition.jpg" alt="2048 image" /></p>
+<p>##Image
+<img src="https://michaellin.me/img/2048_embedded_edition.jpg" alt="2048 image" /></p>
 
 <p>Honestly, I’m pretty bad at this game. Never got a chance to reach 2048 :(</p>
 
-<h2 id="setup">Setup</h2>
-<p>###Stuff you need<br />
+<p>##Setup
+###Stuff you need<br />
 1. Download the source code<br />
 <code class="highlighter-rouge">
 $ git clone https://github.com/ExiaSR/2048_embedded_edition.git
@@ -105,16 +107,16 @@ $ git clone https://github.com/ExiaSR/2048_embedded_edition.git
 2. Or download the zipped file.
 3. Edit the pin setting in config.h, in case you have different Arduino, or whatever..</p>
 
-<h3 id="compling">Compling</h3>
-<p>Builing with a Makefile is recommended.
+<p>###Compling
+Builing with a Makefile is recommended.
 Open up the terminal, and run<br />
 <code class="highlighter-rouge">
 $ make upload
 </code><br />
 Or you may edit or rename the main.cpp by yourself, then use Arduino IDE to complie instead.</p>
 
-<h3 id="wiring-instruction">Wiring Instruction</h3>
-<p>Hardware you need: <br />
+<p>###Wiring Instruction
+Hardware you need: <br />
 1. Arduino board <br />
 2. LCD screen with ST7735 chip<br />
 3. A joystick<br />
