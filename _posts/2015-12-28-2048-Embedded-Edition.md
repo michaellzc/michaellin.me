@@ -2,9 +2,11 @@
 layout: post
 title: 2048 Embedded Edition on Arduino
 comments: true
+redirect_from: /2015/12/28/2048-Embedded-Edition
+permalink: 2048-Embedded-Edition
 ---
 
-2048 is one of the most popular mobile game in the world, so I decided to imagrate this amamzing game to Arduino. Just for my final project, also for fun.
+2048 is one of the most popular mobile game in the world, so I decided to imagrate this amamzing game to Arduino.
 
 ##Image
 ![2048 image](https://michaellin.me/img/2048_embedded_edition.jpg)
