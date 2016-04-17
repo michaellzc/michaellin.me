@@ -13,7 +13,7 @@ paginate_path: "/blog/page:num/"
 
 # Setup
 title:            Michael Lin
-tagline:          'My personal page'
+tagline:          'Blog'
 description:      'Software Developer'
 url:              http://michaellin.me
 baseurl:          /
@@ -26,3 +26,12 @@ paginate:         5
 
 github:
   repo:           https://github.com/ExiaSR
+
+# social network
+social:
+    - title: github
+      url: https://github.com/ExiaSR
+    - title: linkedin
+      url: https://ca.linkedin.com/in/michaellinlzc
+    - title: envelope
+      url: mailto:michaellin@ualberta.ca

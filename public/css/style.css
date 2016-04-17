@@ -6,4 +6,9 @@
 
 .social-icon li {
     display: inline-block;
+    margin: 0 10px 10px 0;
+}
+
+.social-icon {
+    padding-bottom: 10px;
 }
