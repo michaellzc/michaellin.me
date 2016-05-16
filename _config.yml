@@ -12,20 +12,21 @@ permalink:        pretty
 paginate_path: "/blog/page:num/"
 
 # Setup
+homepage_title:   Michael Lin's Blog
 title:            Michael Lin
 tagline:          'Blog'
 description:      'Software Developer'
-url:              http://michaellin.me
+url:              https://michaellin.me
 baseurl:          /
 
 author:
   name:           'Michael Lin'
-  url:            http://michaellin.me
+  url:            https://michaellin.me
 
 paginate:         5
 
-github:
-  repo:           https://github.com/ExiaSR
+# Comments
+disqus_username:    exiasr
 
 # social network
 social:

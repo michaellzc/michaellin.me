@@ -4,6 +4,7 @@ title: The Maze
 comments: true
 redirect_from: /2016/04/10/Python-Game-Maze
 permalink: Maze
+tags: [Python, Game]
 ---
 
 It is a Maze game written in python, with the implementation of Depth-First search. The maze is designed to be hard to solve with a lot of interesections, and only the area within 2 blocks is visulized to player

@@ -1,9 +1,10 @@
 ---
 layout: post
-title: 2048 Embedded Edition on Arduino
+title: 2048 Embedded Edition
 comments: true
 redirect_from: /2015/12/28/2048-Embedded-Edition
 permalink: 2048-Embedded-Edition
+tags: [Arduino, Embedded]
 ---
 
 2048 is one of the most popular mobile game in the world, so I decided to imagrate this amamzing game to Arduino.
