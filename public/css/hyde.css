@@ -31,8 +31,9 @@
  * Update the foundational and global aspects of the page.
  */
 
+/* add PingFang and San Francisco support for Safari */
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "PT Sans", -apple-system, PingFangSC-Regular, Helvetica, Arial, sans-serif;
 }
 @media (min-width: 48em) {
   html {
