@@ -4,32 +4,25 @@ title: 2048 Embedded Edition
 comments: true
 redirect_from: /2015/12/28/2048-Embedded-Edition
 permalink: 2048-Embedded-Edition
-tags: [Arduino, Embedded]
+tags: [Arduino, Embedded, Projects]
 ---
+
+Find <a href="https://github.com/ExiaSR/2048_embedded_edition"><i class="fa fa-code" aria-hidden="true"></i></a> at <a href="https://github.com/ExiaSR/2048_embedded_edition"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
 
 2048 is one of the most popular mobile game in the world, so I decided to imagrate this amamzing game to Arduino.
 
-##Image
+###Image
 ![2048 image](https://michaellin.me/img/2048_embedded_edition.jpg)
 
 Honestly, I'm pretty bad at this game. Never got a chance to reach 2048 :(
 
-##Setup
-###Stuff you need  
+###Setup
 1. Download the source code  
 ```
 $ git clone https://github.com/ExiaSR/2048_embedded_edition.git
 ```
-2. Or download the zipped file.
-3. Edit the pin setting in config.h, in case you have different Arduino, or whatever..
-
-###Compling
-Builing with a Makefile is recommended.
-Open up the terminal, and run  
-```
-$ make upload
-```  
-Or you may edit or rename the main.cpp by yourself, then use Arduino IDE to complie instead.
+2. Or download the zipped [file](https://github.com/ExiaSR/2048_embedded_edition/archive/v1.0.zip).
+3. Edit the pin setting in config.h, in case you have a different Arduino, or whatever prefer.
 
 ###Wiring Instruction
 Hardware you need:   
@@ -38,3 +31,9 @@ Hardware you need:
 3. A joystick  
 4. A push button  
 5. Serval wires  
+
+###Compling
+Builing with a Makefile through the Terminal is recommended, thought you may edit the files by yourself, then use Arduino IDE to compile instead.
+
+###How to play
+Go ahead push the buttom on the Joystick, then you are good to go! Whenever you think you wanna start over again, just press the left buttom.

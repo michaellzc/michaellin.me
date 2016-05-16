@@ -9,6 +9,8 @@ tags: [Python, Game]
 
 It is a Maze game written in python, with the implementation of Depth-First search. The maze is designed to be hard to solve with a lot of interesections, and only the area within 2 blocks is visulized to player
 
+Find <a href="https://github.com/ExiaSR/Maze"><i class="fa fa-code" aria-hidden="true"></i></a> at <a href="https://github.com/ExiaSR/Maze"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+
 ## Setup
 1. Make sure you have Python3 on your computer.
 
