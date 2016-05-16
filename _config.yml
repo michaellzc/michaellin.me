@@ -30,6 +30,8 @@ disqus_username:    exiasr
 
 # social network
 social:
+    - title: key
+      url: https://keybase.io/exiasr
     - title: github
       url: https://github.com/ExiaSR
     - title: linkedin
