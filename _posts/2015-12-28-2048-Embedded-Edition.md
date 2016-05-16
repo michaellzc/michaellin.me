@@ -7,9 +7,10 @@ permalink: 2048-Embedded-Edition
 tags: [Arduino, Embedded, Projects]
 ---
 
+2048 is one of the most popular mobile game in the world, so I decided to imagrate this amamzing game to Arduino.
+
 Find <a href="https://github.com/ExiaSR/2048_embedded_edition"><i class="fa fa-code" aria-hidden="true"></i></a> at <a href="https://github.com/ExiaSR/2048_embedded_edition"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
 
-2048 is one of the most popular mobile game in the world, so I decided to imagrate this amamzing game to Arduino.
 
 ###Image
 ![2048 image](https://michaellin.me/img/2048_embedded_edition.jpg)
