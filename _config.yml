@@ -12,7 +12,7 @@ permalink:        pretty
 paginate_path: "/blog/page:num/"
 
 # Setup
-homepage_title:   Michael Lin's Blog
+homepage_title:   Michael Lin | Blog
 title:            Michael Lin
 tagline:          'Blog'
 description:      'Software Developer'

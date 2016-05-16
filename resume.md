@@ -3,7 +3,7 @@ layout: page
 title: Resume
 ---
 
-
+<!-- 
 ##Education
 ###**BSc honors, Computer Science, University of Alberta**
 2015 - present  GPA: 3.5/4.0
@@ -31,7 +31,7 @@ title: Resume
 ###**Teacher Assistant**
 2012 summer and 2013 summer
 
-Volunteer ar Countryside Teacher Project at Guangya School. Countryside Teacher Project: working with volunteer English teacher from all over the world to help English teacher from the northwest territories in China, specifically Sichuan area, improve their teaching technique and English knowledge.
+Volunteer ar Countryside Teacher Project at Guangya School. Countryside Teacher Project: working with volunteer English teacher from all over the world to help English teacher from the northwest territories in China, specifically Sichuan area, improve their teaching technique and English knowledge. -->
 
 
 ----------------------------
