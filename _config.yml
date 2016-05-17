@@ -19,10 +19,6 @@ description:      'Software Developer'
 url:              https://michaellin.me
 baseurl:          /
 
-author:
-  name:           'Michael Lin'
-  url:            https://michaellin.me
-
 paginate:         5
 
 # Comments
