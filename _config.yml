@@ -19,6 +19,7 @@ description:      Learning to be an awesome programmer
 url:              https://michaellin.me
 baseurl:          /
 
+# Extra
 paginate:         5
 
 # Comments
@@ -34,3 +35,10 @@ social:
       url: https://ca.linkedin.com/in/michaellinlzc
     - title: envelope
       url: mailto:michaellin@ualberta.ca
+
+# Reference(Friends)
+friends:
+    - title: Luojia
+      url: https://luojia.me
+      description: 可爱的男孩子
+      favicon: https://luojia.me/favicon.ico

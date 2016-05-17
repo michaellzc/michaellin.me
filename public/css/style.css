@@ -12,3 +12,21 @@
 .social-icon {
     padding-bottom: 10px;
 }
+
+.friend-reference img {
+    height: 20px;
+    width: 20px;
+    float: left;
+    margin-right: 5px;
+}
+
+.friend-reference a {
+    color: #404040;
+}
+
+.reference-padding {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
