@@ -15,7 +15,7 @@ paginate_path: "/blog/page:num/"
 homepage_title:   Michael Lin | Blog
 title:            Michael Lin
 tagline:          'Blog'
-description:      'Software Developer'
+description:      Learning to be an awesome programmer
 url:              https://michaellin.me
 baseurl:          /
 
