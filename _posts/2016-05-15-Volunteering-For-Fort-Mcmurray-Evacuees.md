@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Volunteering for FortMc Evacuees
+title: Volunteering for Fort Mcmurray Evacuees
 comments: true
 redirect_from: /2016/05/15/volunteering-for-fort-mcmurray-evacuees/
 permalink: volunteering-for-fort-mcmurray-evacuees
