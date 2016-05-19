@@ -5,6 +5,7 @@ gems:
     - jekyll-gist
     - jekyll-paginate
     - redcarpet
+    - jekyll-sitemap
 
 # Permalinks
 permalink:        pretty
