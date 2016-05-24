@@ -22,7 +22,3 @@ Find <a href="https://github.com/ExiaSR/SnakeRobot"><i class="fa fa-code" aria-h
         </div>
      </div>
 </div>
-
-<div class="plyr">
-    <div data-video-id="j3M8-AIwa54" data-type="youtube"></div>
-</div>

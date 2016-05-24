@@ -30,3 +30,12 @@
     border: 0;
     border-top: 1px solid #eee;
 }
+
+.post-button {
+    margin-top: .5em;
+    text-align: right;
+}
+
+.post-button a {
+    font-size: 0.8rem;
+}
