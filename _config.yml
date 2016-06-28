@@ -47,6 +47,10 @@ friends:
       url: https://m.do.co/c/faff46d8cc4b
       description: Get $10 by using my link to signup
       favicon: https://cloud.digitalocean.com/favicon.ico
+    - title: Vultr
+      url: http://www.vultr.com/?ref=6900414
+      description: Get $10 by using my link to signup
+      favicon: https://www.vultr.com/favicon.ico
     - title: Vnet.link
       url: https://vnet.one/rc31
       description: 加速访问国内网站
