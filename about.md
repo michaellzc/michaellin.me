@@ -11,7 +11,7 @@ Thanks for visiting my page! I'm Michael, a first year Computer Science student 
 * Co-funder of Robot Club during the High School, we self taught programming language to work on serval projects.
 
 ### Experience
-I have my first internship at [YY Inc](http://investors.yy.com/) as a Software Engineer, and I am looking for opportunity in the next Summer or Fall term.
+I have my first internship at [YY Inc](http://investors.yy.com/) as a Software Engineer.
 
 ### Contact
 I am looking for future internships opportunities. If you are interested in my projects or just want to get to know me, feel free to send me an email or call me at the number below.
