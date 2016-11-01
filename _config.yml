@@ -6,7 +6,7 @@ gems:
     - jekyll-paginate
     - redcarpet
     - jekyll-sitemap
-
+    - jekyll-admin
 # Permalinks
 permalink:        pretty
 # relative_permalinks: true
