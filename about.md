@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 <br>
-Thanks for visiting my page! I'm Michael, a first year Computer Science student at the [University of Alberta](https://ualberta.ca).
+Thanks for visiting my page! I'm Michael, a second year Computer Science student at the [University of Alberta](https://ualberta.ca).
 
 
 ### Interest
