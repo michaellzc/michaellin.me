@@ -2,7 +2,7 @@
 
 ### [Check out my blog](https://michaellin.me)
 
-##Credits
+## Credits
 
 * [poole/hyde](https://github.com/poole/hyde)
 
