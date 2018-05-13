@@ -2,21 +2,22 @@
 markdown:         kramdown
 highlighter:      rouge
 plugins:
-    - jekyll-gist
-    - jekyll-paginate
-    - kramdown
-    - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-paginate
+  - kramdown
+  - jekyll-sitemap
+  - jekyll-seo-tag
 # Permalinks
 permalink:        pretty
 # relative_permalinks: true
 paginate_path: "/blog/page:num/"
 
 # Setup
-homepage_title:   Michael Lin | Blog
+homepage_title:   Michael Lin
 title:            Michael Lin
 tagline:          'Blog'
-description:      Learning to be an awesome programmer
-url:              https://michaellin.me
+description:      Hi! My name is Michael and I'm a Software Developer. I'm passionate Web Development and DevOps, also love to explor Artificial Intelligence and Cloud Computing. 
+url:              michaellin.me
 baseurl:          /
 
 # Extra
@@ -24,6 +25,12 @@ paginate:         5
 
 # Comments
 disqus_username:    exiasr
+
+# Jekyll SEO
+github: ExiaSR
+twitter: 
+  username: ExiaSR
+  card: summary
 
 # social network
 social:
