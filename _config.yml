@@ -16,7 +16,7 @@ paginate_path: "/blog/page:num/"
 homepage_title:   Michael Lin
 title:            Michael Lin
 tagline:          'Blog'
-description:      Hi! My name is Michael and I'm a Software Developer. I'm passionate Web Development and DevOps, also love to explor Artificial Intelligence and Cloud Computing. 
+description:      Hi! My name is Michael and I'm a Software Developer. I'm passionate about Web Development and DevOps, also love to explore Artificial Intelligence and Cloud Computing. 
 url:              michaellin.me
 baseurl:          /
 
