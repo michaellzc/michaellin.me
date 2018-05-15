@@ -17,7 +17,7 @@ homepage_title:   Michael Lin
 title:            Michael Lin
 tagline:          'Blog'
 description:      Hi! My name is Michael and I'm a Software Developer. I'm passionate about Web Development and DevOps, also love to explore Artificial Intelligence and Cloud Computing. 
-url:              michaellin.me
+url:              https://michaellin.me
 baseurl:          /
 
 # Extra
