@@ -10,16 +10,22 @@
     </div>
 
     <nav class="sidebar-nav">
-        <div class="social-icon" align="center">
-            Find me:
-            <ul>
-              {% for network in site.social %}
+      <div class="social-icon" align="center">
+        Find me:
+        <ul>
+          {% for network in site.social %}
+            {% if network.title == "envelope" %}
               <li>
-                <a href="{{ network.url }}" target="_blank"><i class="fa fa-{{ network.title }}"></i></a>
+                <a href="{{ network.url }}" target="_blank"><i class="fas fa-{{ network.title }}"></i></a>
               </li>
-              {% endfor %}
-            </ul>
-        </div>
+            {% else %}
+              <li>
+                <a href="{{ network.url }}" target="_blank"><i class="fab fa-{{ network.title }}"></i></a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
 
       {% comment %}
@@ -40,11 +46,8 @@
   </div>
 
   <div class="container sidebar-sticky">
-      <p style="font-size1:10px;">&copy; 2018 Michael Lin. This work is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></p>
-
-      <p style="font-size:12px;">
-          <i class="fa fa-code" aria-hidden="true"></i> with <a style="color:#ff0000;">❤</a> by <a href="https://jekyllrb.com/">Jekyll</a> &nbsp;|&nbsp;
-          <a href="https://github.com/ExiaSR/michaellin.me">Find <i class="fa fa-code" aria-hidden="true"></i> at <i class="fa fa-github-square" aria-hidden="true"></i></a>
+      <p style="font-size:16px;">
+        &copy; 2018 Michael Lin. This work is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>
       </p>
   </div>
 </div>
