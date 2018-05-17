@@ -15,4 +15,5 @@ I have my first internship at [YY Inc](http://investors.yy.com/) as a Software E
 
 ### Contact
 I am looking for future internships opportunities. If you are interested in my projects or just want to get to know me, feel free to send me an email or call me at the number below.
-<center><pre><i class="fa fa-envelope"></i> [michaellin@ualberta.ca](mailto:michaellin@ualberta.ca)  <i class="fa fa-phone"></i> +1 (780)-716-4073</pre></center>
+
+<center><pre><i class="fa fa-envelope"></i> <a href="mailto:linzichunzf@hotmail.com">linzichunzf@hotmail.com</a> <i class="fab fa-telegram"></i> <a href="http://telegram.me/ExiaSR" target="_blank">@ExiaSR</a></pre></center>
