@@ -13,7 +13,7 @@ I gain a sense of unity from working with members, without our teamwork, we won'
 
 This project is developed by Robot Club at Guangya School in 2015.
 
-Find <a href="https://github.com/ExiaSR/SnakeRobot"><i class="fa fa-code" aria-hidden="true"></i></a> at <a href="https://github.com/ExiaSR/SnakeRobot"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+Find <a href="https://github.com/ExiaSR/SnakeRobot"><i class="fa fa-code" aria-hidden="true"></i></a> at <a href="https://github.com/ExiaSR/SnakeRobot"><i class="fab fa-github" aria-hidden="true"></i> Github</a>
 
 <div class="container">
     <div class="row">
