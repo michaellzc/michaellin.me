@@ -7,6 +7,7 @@ plugins:
   - kramdown
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-feed
 # Permalinks
 permalink:        pretty
 # relative_permalinks: true
@@ -19,6 +20,7 @@ tagline:          'Blog'
 description:      Hi! My name is Michael and I'm a Software Developer. I'm passionate about Web Development and DevOps, also love to explore Artificial Intelligence and Cloud Computing. 
 url:              https://michaellin.me
 baseurl:          /
+author:           Michael Lin
 
 # Extra
 paginate:         5
@@ -31,6 +33,10 @@ github: ExiaSR
 twitter: 
   username: ExiaSR
   card: summary
+
+# Jekyll Feed
+feed:
+  path: atom.xml
 
 # social network
 social:
