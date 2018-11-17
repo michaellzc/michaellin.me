@@ -30,7 +30,7 @@ const Link = ({ children, to, ...other }) => {
 
 Link.propTypes = {
   to: string,
-  children: node
+  children: node,
 }
 
 export default Link
