@@ -1,10 +1,10 @@
 import React from 'react'
-import Link from '../components/link'
 import { css } from 'emotion'
 import Layout from '../components/layout'
 import Footer from '../components/footer'
 import Intro from '../components/intro'
 import Contact from '../components/contact'
+import Menu from '../components/menu'
 
 const fixFullHeight = css`
   .hero.is-fullheight.has-fixed-navbar {
@@ -19,23 +19,7 @@ const IndexPage = () => (
         <div className="container has-text-centered">
           <Intro />
           <Contact />
-          <div className="columns is-centered is-mobile">
-            <div className="column is-narrow">
-              <Link to="/resume_en.pdf" className="button is-text">
-                Resume
-              </Link>
-            </div>
-            <div className="column is-narrow">
-              <Link to="/wip" className="button is-text">
-                Blog
-              </Link>
-            </div>
-            <div className="column is-narrow">
-              <Link to="/wip" className="button is-text">
-                Reference
-              </Link>
-            </div>
-          </div>
+          <Menu />
         </div>
       </div>
       <div className="hero-foot">

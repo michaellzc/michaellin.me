@@ -73,6 +73,20 @@ module.exports = {
         description: 'Get $10 by using my link to signup',
         icon: 'https://www.vultr.com/favicon.ico'
       }
+    ],
+    menu: [
+      {
+        name: 'Resume',
+        href: '/resume_en.pdf'
+      },
+      {
+        name: 'Blog',
+        href: '/wip'
+      },
+      {
+        name: 'Reference',
+        href: '/wip'
+      }
     ]
   },
   plugins: [
