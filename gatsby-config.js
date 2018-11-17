@@ -106,5 +106,11 @@ module.exports = {
         includeInDevelopment: false,
       },
     },
+    {
+      resolve: 'gatsby-plugin-typography',
+      options: {
+        pathToConfigModule: 'src/utils/typography'
+      }
+    }
   ],
 }
