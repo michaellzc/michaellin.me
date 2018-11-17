@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import Link from '../components/link'
 import { css } from 'emotion'
 import Layout from '../components/layout'
 import Footer from '../components/footer'
@@ -21,9 +21,9 @@ const IndexPage = () => (
           <Contact />
           <div className="columns is-centered is-mobile">
             <div className="column is-narrow">
-              <a className="button is-text" href="/resume_en.pdf">
+              <Link to="/resume_en.pdf" className="button is-text">
                 Resume
-              </a>
+              </Link>
             </div>
             <div className="column is-narrow">
               <Link to="/wip" className="button is-text">
