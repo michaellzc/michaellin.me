@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import Footer from '../components/footer'
 import Intro from '../components/intro'
 import Contact from '../components/contact'
 
@@ -29,6 +30,9 @@ const IndexPage = () => (
             </div>
           </div>
         </div>
+      </div>
+      <div className="hero-foot">
+        <Footer />
       </div>
     </section>
   </Layout>
