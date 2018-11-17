@@ -1,13 +1,20 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { css } from 'emotion'
 import Layout from '../components/layout'
 import Footer from '../components/footer'
 import Intro from '../components/intro'
 import Contact from '../components/contact'
 
+const fixFullHeight = css`
+  .hero.is-fullheight.has-fixed-navbar {
+    min-height: calc(100vh - #{$navbar-height});
+  }
+`
+
 const IndexPage = () => (
   <Layout>
-    <section className="hero is-light is-fullheight">
+    <section className={`hero is-light is-fullheight ${fixFullHeight}`}>
       <div class="hero-body">
         <div class="container has-text-centered">
           <Intro />
