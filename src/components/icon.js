@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'react-emotion'
-import { string } from 'prop-types'
+import { any } from 'prop-types'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -23,7 +23,7 @@ const StyledIcon = styled(UnstyledIcon)`
 const Icon = ({ icon }) => <StyledIcon icon={icon} />
 
 Icon.propTypes = {
-  icon: string,
+  icon: any,
 }
 
 export default Icon
