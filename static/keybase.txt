@@ -1,0 +1,80 @@
+==================================================================
+https://keybase.io/exiasr
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://michaellin.me
+  * I am exiasr (https://keybase.io/exiasr) on keybase.
+  * I have a public key with fingerprint 3A27 02EE 9185 C165 394B  37F6 23DF A250 4A39 7755
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01012b3c9bd3e99180744a2c958732b11fc1f07370a02d1ab2d7abcd0905b35f49010a",
+            "fingerprint": "3a2702ee9185c165394b37f623dfa2504a397755",
+            "host": "keybase.io",
+            "key_id": "23dfa2504a397755",
+            "kid": "01012b3c9bd3e99180744a2c958732b11fc1f07370a02d1ab2d7abcd0905b35f49010a",
+            "uid": "4b25e4f314b08ccf2e64c52471756219",
+            "username": "exiasr"
+        },
+        "revoke": {
+            "sig_ids": [
+                "5e1256255a2b84aef8b8d905f65a2308a9463ba1dad36e5feb089048e10f0fc10f"
+            ]
+        },
+        "service": {
+            "hostname": "michaellin.me",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1463430470,
+    "expire_in": 157680000,
+    "prev": "f7830334aa10c6dc7d0822b377f89e66183f17d1ac420bf229e9b314b3ff00ef",
+    "seqno": 18,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMN9AnicrZJrTFxFGIZ320rCWqhWKhGraw9prLKQOfdz1lTsJZBSkHIrVKqbc5kD
+h112cc9C2a5tajHdkraioEgQSqptQUtqixK8BLeQhVAgJhhaqaAEiA2lK5RADNKb
+c0j950/nz2Rm3u953/lmghGrDSZj7Phne1L4AznGga6FUkOuNT7Jh4ku2YtZfZgd
+rkzQIUPNY7OrMmbFAA5wQiQlXpRJyPM4B1iKEgiJpzmWJEQcVyRcASzJAgEQMi6I
+hMwKoiQDHtAiSSsUjwgCZsEU1VkA3SVu1elBWFIgWEBAiIC0hDM0yVMiySoMQcqK
+QNCAEkieZWkaFRa6NL0ChRMFDSaoLrSHFraVeP+h/59zl67gKJGgIaWQOCUCTpIU
+AjKURBMUi7M0Q+C8LtSg2ykUQ6SG5aqgubFDFswNy1x2qHdVUwtQZA2z5mM0xAlU
+RdMCIXKUABVO5GTkqzBohwScwFMMKQq4LMgkA2kFIk8eUBzEgQJQbqBgbyI28itT
+pRW43qNH3sWqVChAh0N1JqC1BStxuzwuyeVAR4UeT4lm1WN5vCW69gAUbY8oNlF1
+yuiJUEUZdGuqy4lZcaSUPKqOxVEiigQUCyzodiWqG9pUXUGzDAfQ0H1gGUIqLEcC
+kqQEAQcSI0usDDgCPQTLKhwPGQbnSAVnUcMligCiQhA85EW9raSiAAAVTL/X204X
+YnMop1CAmKh1TsFT6obYoe6u/WsMRpMh7LFV+t81mMKf+PdHX/eve5h2qtyf++rP
+qgfrrIxrxs5sbKhtzTWlf/p8dU5MX/Nt8siZadPmk6twf+Sw787pj9h5eM48OHr3
+wQnrS6uTvok6UvNxkSsW5rd13BsO7l1WDoZanrRVBPrF67vrltv7gtnTm+9P7D3x
+99TQCxVsYmBRGTv4cCirvjbeTG1rPLm1XE0KN7d+sTYuZvGdPy4H+cYK81hYy+Vd
+3g9nq17ZlmqcMZj9wYEfJ6qqzs/7IovDW+bA1JYNW8lJJuLuM7syfQ3V/vae4k3H
+ZmfuG7+CKdGdW2oX+OOZA+7iottXDreb+vpDf9auH0p7l8Yzum4O1w24foLzxycb
+oz+w073nE8unL32fnOHIbCJqUs5++VR0m/OStycnDgymjO5fjtrZ9ID3yr/5L+Qf
+/eR39uyaykBg7Kb/lxcj+nuy2/I99fU+a8gop41/rjYkvzfRodE7b2yHM2EVqXld
+8U/XzEVGVnXkvSEGdtxIOGcZ2vP4VKDu5biRr6nRxd0LanrHpunYekdKXv+sKWt4
+u10JxRNpS1d//eHbDXPC0kjWvhHfxsR9fOhoWGN6zLPJUX+FJZyOWHcv0uRdvhJk
+WqOzq69OmnzmpeGLO+yd5gvHBl6TmkaahWuD3u7DvXY1j31Oe/3ULTp/fdnM6Nr3
+zd2z4zMZRZXXyO9g78XQrVTLW2mZ/t68O1LdPxIz2jc=
+=pP5+
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/exiasr
+
+==================================================================

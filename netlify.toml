@@ -1,0 +1,7 @@
+[build.environment]
+  YARN_VERSION = "1.12.3"
+  NODE_VERSION = "10"
+  YARN_FLAGS = "--pure-lockfile --verbose"
+
+[context.production.environment]
+  GOOGLE_TAGMANAGER_ID = "GTM-MJ54NX4"

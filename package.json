@@ -1,0 +1,45 @@
+{
+  "name": "michaellin.me",
+  "description": "My personal landing page",
+  "version": "1.0.0",
+  "author": "Michael Lin <linzichunzf@hotmail.com>",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.8",
+    "@fortawesome/free-brands-svg-icons": "^5.5.0",
+    "@fortawesome/free-solid-svg-icons": "^5.5.0",
+    "@fortawesome/react-fontawesome": "^0.1.3",
+    "bulma": "^0.7.2",
+    "emotion": "^9.2.12",
+    "emotion-server": "^9.2.12",
+    "gatsby": "^2.0.50",
+    "gatsby-plugin-emotion": "^2.0.6",
+    "gatsby-plugin-google-tagmanager": "^2.0.6",
+    "gatsby-plugin-manifest": "^2.0.5",
+    "gatsby-plugin-offline": "^2.0.11",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-robots-txt": "^1.3.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-emotion": "^9.2.12",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "start": "yarn dev",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  }
+}
