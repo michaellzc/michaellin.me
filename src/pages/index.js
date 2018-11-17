@@ -15,23 +15,23 @@ const fixFullHeight = css`
 const IndexPage = () => (
   <Layout>
     <section className={`hero is-light is-fullheight ${fixFullHeight}`}>
-      <div class="hero-body">
-        <div class="container has-text-centered">
+      <div className="hero-body">
+        <div className="container has-text-centered">
           <Intro />
           <Contact />
           <div className="columns is-centered is-mobile">
             <div className="column is-narrow">
-              <a class="button is-text" href="/resume_en.pdf">
+              <a className="button is-text" href="/resume_en.pdf">
                 Resume
               </a>
             </div>
             <div className="column is-narrow">
-              <Link to="/wip" class="button is-text">
+              <Link to="/wip" className="button is-text">
                 Blog
               </Link>
             </div>
             <div className="column is-narrow">
-              <Link to="/wip" class="button is-text">
+              <Link to="/wip" className="button is-text">
                 Reference
               </Link>
             </div>

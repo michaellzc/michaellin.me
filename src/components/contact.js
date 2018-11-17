@@ -20,11 +20,10 @@ const Contact = () => (
     render={data => (
       <div className="columns is-centered is-mobile">
         {data.site.siteMetadata.contacts.map(
-          ({ id, href, label, className }) => (
-            <div className="column is-narrow">
+          ({ href, label, className }) => (
+            <div className="column is-narrow" key={label}>
               <a
                 href={href}
-                key={id}
                 alt={label}
                 target="_blank"
                 rel="noopener noreferrer"

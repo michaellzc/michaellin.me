@@ -4,10 +4,10 @@ import Contact from '../components/contact'
 
 const WorkInProgressPage = () => (
   <Layout>
-    <section class="hero is-light is-fullheight">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title">Coming Soon</h1>
+    <section claassName="hero is-light is-fullheight">
+      <div claassName="hero-body">
+        <div claassName="container has-text-centered">
+          <h1 claassName="title">Coming Soon</h1>
           <Contact />
         </div>
       </div>
