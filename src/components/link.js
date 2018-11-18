@@ -29,8 +29,8 @@ const Link = ({ children, to, ...other }) => {
 }
 
 Link.propTypes = {
-  to: string,
-  children: node,
+  to: string.isRequired,
+  children: node.isRequired,
 }
 
 export default Link

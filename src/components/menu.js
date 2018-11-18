@@ -1,5 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import { string } from 'prop-types'
 import Link from './link'
 
 const MenuItem = ({ name, to }) => (
@@ -33,5 +34,10 @@ const Menu = () => (
     )}
   />
 )
+
+MenuItem.propTypes = {
+  name: string.isRequired,
+  to: string.isRequired,
+}
 
 export default Menu

@@ -23,7 +23,7 @@ const StyledIcon = styled(UnstyledIcon)`
 const Icon = ({ icon }) => <StyledIcon icon={icon} />
 
 Icon.propTypes = {
-  icon: any,
+  icon: any.isRequired,
 }
 
 export default Icon

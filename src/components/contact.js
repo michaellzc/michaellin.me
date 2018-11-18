@@ -1,7 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Icon from './icon'
-import Link from '../components/link'
+import Link from './link'
 
 const Contact = () => (
   <StaticQuery

@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { node } from 'prop-types'
 import { css } from 'react-emotion'
 import SEO from './seo'
 import Footer from './footer'
@@ -22,5 +23,9 @@ const HeroLayout = ({ children }) => (
     </section>
   </Fragment>
 )
+
+HeroLayout.propTypes = {
+  children: node.isRequired,
+}
 
 export default HeroLayout
