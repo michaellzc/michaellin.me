@@ -92,6 +92,14 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-emotion',
+    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/posts`,
+        name: "posts",
+      },
+    },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
