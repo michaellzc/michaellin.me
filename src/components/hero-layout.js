@@ -1,7 +1,6 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { node } from 'prop-types'
 import { css } from 'react-emotion'
-import SEO from './seo'
 import Footer from './footer'
 import 'bulma/css/bulma.css'
 import 'typeface-lato'
@@ -13,15 +12,12 @@ const fixFullHeight = css`
 `
 
 const HeroLayout = ({ children }) => (
-  <Fragment>
-    <SEO />
-    <section className={`hero is-light is-fullheight ${fixFullHeight}`}>
-      <div className="hero-body">{children}</div>
-      <div className="hero-foot">
-        <Footer />
-      </div>
-    </section>
-  </Fragment>
+  <section className={`hero is-light is-fullheight ${fixFullHeight}`}>
+    <div className="hero-body">{children}</div>
+    <div className="hero-foot">
+      <Footer />
+    </div>
+  </section>
 )
 
 HeroLayout.propTypes = {

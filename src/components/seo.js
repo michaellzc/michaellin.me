@@ -1,8 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import { string } from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-const SEO = () => (
+const SEO = ({ title, description, url }) => (
   <StaticQuery
     query={graphql`
       query SEOQuery {
@@ -17,32 +18,50 @@ const SEO = () => (
         }
       }
     `}
-    render={data => (
-      <Helmet>
-        <title>{data.site.siteMetadata.title}</title>
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <meta name="author" content={data.site.siteMetadata.author} />
-        <meta name="description" content={data.site.siteMetadata.description} />
-        <meta name="keywords" content={data.site.siteMetadata.keywords} />
+    render={({ site: { siteMetadata: meta } }) => {
+      const seo = {
+        title: title || meta.title,
+        description: description || meta.description,
+        siteUrl: url || meta.url,
+        author: meta.author,
+        keywords: meta.keywords,
+      }
 
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={data.site.siteMetadata.siteUrl} />
-        <meta property="og:title" content={data.site.siteMetadata.title} />
-        <meta
-          property="og:description"
-          content={data.site.siteMetadata.description}
-        />
+      return (
+        <Helmet defaultTitle={meta.title} titleTemplate="%s · Michael Lin">
+          <html lang="en" />
 
-        <meta name="twitter:url" content={data.site.siteMetadata.siteUrl} />
-        <meta name="twitter:title" content={data.site.siteMetadata.title} />
-        <meta
-          name="twitter:description"
-          content={data.site.siteMetadata.description}
-        />
-        <meta name="twitter:creator" content={data.site.siteMetadata.twitter} />
-      </Helmet>
-    )}
+          <title>{seo.title}</title>
+          <link rel="shortcut icon" href="/favicon.ico" />
+          <meta name="author" content={seo.author} />
+          <meta name="description" content={seo.description} />
+          <meta name="keywords" content={seo.keywords} />
+
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={seo.siteUrl} />
+          <meta property="og:title" content={seo.title} />
+          <meta property="og:description" content={seo.description} />
+
+          <meta name="twitter:url" content={seo.siteUrl} />
+          <meta name="twitter:title" content={seo.title} />
+          <meta name="twitter:description" content={seo.description} />
+          <meta name="twitter:creator" content={seo.twitter} />
+        </Helmet>
+      )
+    }}
   />
 )
+
+SEO.propTypes = {
+  title: string,
+  description: string,
+  url: string,
+}
+
+SEO.defaultProps = {
+  title: null,
+  description: null,
+  url: null,
+}
 
 export default SEO
