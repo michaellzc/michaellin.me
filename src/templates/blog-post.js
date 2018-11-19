@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 
 // eslint-disable-next-line react/prop-types
 const BlogPost = ({ data: { markdownRemark: post } }) => (
-  <Layout article>
+  <Layout>
     <SEO
       title={post.frontmatter.title}
       description={post.frontmatter.description}

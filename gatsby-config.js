@@ -92,7 +92,6 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-emotion',
-    'gatsby-transformer-remark',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -100,6 +99,7 @@ module.exports = {
         name: "posts",
       },
     },
+    'gatsby-transformer-remark',
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
