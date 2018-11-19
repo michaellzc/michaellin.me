@@ -4,9 +4,9 @@ const {
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
   GOOGLE_TAGMANAGER_ID,
-} = process.env;
-const isNetlifyProduction = NETLIFY_ENV === 'production';
-const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
+} = process.env
+const isNetlifyProduction = NETLIFY_ENV === 'production'
+const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 
 module.exports = {
   siteMetadata: {
@@ -20,74 +20,74 @@ module.exports = {
       {
         className: 'fab, github',
         href: 'https://github.com/ExiaSR',
-        label: 'Github'
+        label: 'Github',
       },
       {
         className: 'fab, linkedin',
         href: 'https://ca.linkedin.com/in/michaellinlzc',
-        label: 'Linkedin'
+        label: 'Linkedin',
       },
       {
         className: 'fab, twitter',
         href: 'https://twitter.com/michaellin_lzc',
-        label: 'Twitter'
+        label: 'Twitter',
       },
       {
         className: 'fab, keybase',
         href: 'https://keybase.io/exiasr',
-        label: 'Keybase'
+        label: 'Keybase',
       },
       {
         className: 'fab, telegram',
         href: 'http://telegram.me/ExiaSR',
-        label: 'Telegram'
+        label: 'Telegram',
       },
       {
         className: 'fas, envelope',
         href: 'mailto:linzichunzf@hotmail.com',
-        label: 'Email'
-      }
+        label: 'Email',
+      },
     ],
     references: [
       {
         title: 'Luojia',
         href: 'https://luojia.me',
         description: '可爱的男孩子',
-        icon: 'https://luojia.me/favicon.ico'
+        icon: 'https://luojia.me/favicon.ico',
       },
       {
         title: 'BlackGlory',
         href: 'https://www.blackglory.me',
         description: '写代码的游戏玩家',
-        icon: 'https://www.blackglory.me/assets/favicon.ico'
+        icon: 'https://www.blackglory.me/assets/favicon.ico',
       },
       {
         title: 'DigitalOcean',
         href: 'https://m.do.co/c/faff46d8cc4b',
         description: 'Get $10 by using my link to signup',
-        icon: 'https://www.digitalocean.com/favicon.ico'
+        icon: 'https://www.digitalocean.com/favicon.ico',
       },
       {
         title: 'Vultr',
         href: 'http://www.vultr.com/?ref=6900414',
         description: 'Get $10 by using my link to signup',
-        icon: 'https://www.vultr.com/favicon.ico'
-      }
+        icon: 'https://www.vultr.com/favicon.ico',
+      },
     ],
     menu: [
       {
         name: 'Resume',
-        href: '/resume_en.pdf'
+        href: '/resume_en.pdf',
       },
       {
         name: 'Blog',
-        href: '/wip'
+        href: '/wip',
       },
       {
         name: 'Reference',
-        href: '/wip'
-      }
-    ]
+        href: '/wip',
+      },
+    ],
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -98,20 +98,20 @@ module.exports = {
         resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
-            policy: [{ userAgent: '*', allow: '/' }]
+            policy: [{ userAgent: '*', allow: '/' }],
           },
           'branch-deploy': {
             policy: [{ userAgent: '*', disallow: ['/'] }],
             sitemap: null,
-            host: null
+            host: null,
           },
           'deploy-preview': {
             policy: [{ userAgent: '*', disallow: ['/'] }],
             sitemap: null,
-            host: null
-          }
-        }
-      }
+            host: null,
+          },
+        },
+      },
     },
     {
       resolve: 'gatsby-plugin-google-tagmanager',
@@ -124,8 +124,8 @@ module.exports = {
       resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: 'src/utils/typography',
-        omitGoogleFont: true
-      }
-    }
+        omitGoogleFont: true,
+      },
+    },
   ],
 }
