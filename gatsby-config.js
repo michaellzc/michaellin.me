@@ -79,14 +79,6 @@ module.exports = {
         name: 'Resume',
         href: '/resume_en.pdf',
       },
-      {
-        name: 'Blog',
-        href: '/wip',
-      },
-      {
-        name: 'Reference',
-        href: '/wip',
-      },
     ],
   },
   plugins: [
