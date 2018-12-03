@@ -19,6 +19,9 @@ const Footer = () => (
         <Link to="/wip" className="button is-text level-item">
           About
         </Link>
+        <Link to="/references" className="button is-text level-item">
+          References
+        </Link>
       </div>
 
       <div className="level-right">

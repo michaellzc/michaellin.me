@@ -52,26 +52,42 @@ module.exports = {
       {
         title: 'Luojia',
         href: 'https://luojia.me',
-        description: '可爱的男孩子',
+        description: '佳佳酱 | 跨次元日常卖萌',
         icon: 'https://luojia.me/favicon.ico',
+        handler: {
+          title: '@JiaJiaJiang',
+          href: 'https://github.com/JiaJiaJiang'
+        }
       },
       {
         title: 'BlackGlory',
         href: 'https://www.blackglory.me',
-        description: '写代码的游戏玩家',
+        description: 'Experimental Web Component set @MudElements maintainer.',
         icon: 'https://www.blackglory.me/assets/favicon.ico',
+        handler: {
+          title: '@BlackGlory',
+          href: 'https://github.com/BlackGlory'
+        }
       },
       {
         title: 'DigitalOcean',
         href: 'https://m.do.co/c/faff46d8cc4b',
-        description: 'Get $10 by using my link to signup',
+        description: 'Get $100 credits over 60 days',
         icon: 'https://www.digitalocean.com/favicon.ico',
+        handler: {
+          title: '@digitalocean',
+          href: 'https://twitter.com/digitalocean'
+        }
       },
       {
         title: 'Vultr',
         href: 'http://www.vultr.com/?ref=6900414',
         description: 'Get $10 by using my link to signup',
-        icon: 'https://www.vultr.com/favicon.ico',
+        icon: 'https://www.vultr.com/dist/img/brand/logo_v_onwhite.svg',
+        handler: {
+          title: '@Vultr',
+          href: 'https://twitter.com/vultr'
+        }
       },
     ],
     menu: [
