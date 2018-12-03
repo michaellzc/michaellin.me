@@ -25,12 +25,21 @@ const BlogPost = ({ data: { markdownRemark: post } }) => (
 )
 
 export const query = graphql`
-  query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+  query BlogPostBySlug($slug: String!) {
+    site {
+      siteMetadata {
+        title
+        author
+      }
+    }
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      id
+      excerpt
       html
       frontmatter {
         title
         description
+        date(formatString: "MMMM DD, YYYY")
       }
     }
   }

@@ -1,5 +1,4 @@
 ---
-slug: "/hello-world"
 date: "2015-12-27"
 title: "Hello World!"
 description: "My first post"
