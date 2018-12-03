@@ -62,7 +62,7 @@ module.exports = {
       {
         title: 'BlackGlory',
         href: 'https://www.blackglory.me',
-        description: 'Experimental Web Component set @MudElements maintainer.',
+        description: 'Experimental Web Component set @MudElements maintainer',
         icon: 'https://www.blackglory.me/assets/favicon.ico',
         handler: {
           title: '@BlackGlory',
@@ -82,7 +82,7 @@ module.exports = {
       {
         title: 'Vultr',
         href: 'http://www.vultr.com/?ref=6900414',
-        description: 'Get $10 by using my link to signup',
+        description: 'Get $10 credits',
         icon: 'https://www.vultr.com/dist/img/brand/logo_v_onwhite.svg',
         handler: {
           title: '@Vultr',
