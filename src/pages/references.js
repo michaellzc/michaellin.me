@@ -30,7 +30,7 @@ const ReferencesPage = () => (
     }) => (
       <Layout>
         <div className="container">
-          <div className="columns is-centered">
+          <div className="columns is-multiline is-centered">
             {references.map(reference => (
               <ReferenceCard
                 key={reference.title}

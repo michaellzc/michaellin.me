@@ -4,7 +4,7 @@ import { string, any } from 'prop-types'
 import Link from './link'
 
 const ReferenceCard = ({ name, link, description, icon, handler }) => (
-  <div className="column">
+  <div className="column is-two-fifths">
     <div
       className={`card ${css`
         box-shadow: none;
