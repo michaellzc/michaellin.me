@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { css } from 'react-emotion'
+import { css } from '@emotion/core'
 import Link from './link'
 
 class Header extends Component {
@@ -16,9 +16,10 @@ class Header extends Component {
     const { isOpened } = this.state
     return (
       <nav
-        className={`navbar ${css`
+        className="navbar"
+        css={css`
           margin-top: 1.5rem;
-        `}`}
+        `}
         role="navigation"
         aria-label="main navigation"
       >

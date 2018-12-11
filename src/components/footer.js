@@ -1,12 +1,13 @@
 import React from 'react'
-import { css } from 'react-emotion'
+import { css } from '@emotion/core'
 import Link from './link'
 
 const Footer = () => (
   <footer
-    className={`footer has-background-light ${css`
+    className="footer has-background-light"
+    css={css`
       padding: 3rem 1.5rem 3rem;
-    `}`}
+    `}
   >
     <nav className="container level">
       <div className="level-left">

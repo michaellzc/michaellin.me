@@ -1,17 +1,18 @@
 import React from 'react'
-import { css } from 'react-emotion'
+import { css } from '@emotion/core'
 import { string, any } from 'prop-types'
 import Link from './link'
 
 const ReferenceCard = ({ name, link, description, icon, handler }) => (
   <div className="column is-two-fifths">
     <div
-      className={`card ${css`
+      className="card"
+      css={css`
         box-shadow: none;
         display: flex;
         flex-direction: column;
         height: 100%;
-      `}`}
+      `}
     >
       <div className="card-image" />
       <div className="card-content">
