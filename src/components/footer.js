@@ -27,7 +27,7 @@ const Footer = () => (
 
       <div className="level-right">
         <div className="has-text-centered">
-          <p>Copyright © 2018 Michael Lin</p>
+          <p>Copyright © 2019 Michael Lin</p>
         </div>
       </div>
     </nav>
