@@ -39,7 +39,7 @@ module.exports = {
       },
       {
         className: 'fab, telegram',
-        href: 'http://telegram.me/ExiaSR',
+        href: 'https://telegram.me/ExiaSR',
         label: 'Telegram',
       },
       {
