@@ -44,7 +44,7 @@ module.exports = {
       },
       {
         className: 'fas, envelope',
-        href: 'mailto:linzichunzf@hotmail.com',
+        href: 'mailto:hi@michaellin.me',
         label: 'Email',
       },
     ],
