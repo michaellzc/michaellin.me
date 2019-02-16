@@ -24,7 +24,7 @@ module.exports = {
       },
       {
         className: 'fab, linkedin',
-        href: 'https://ca.linkedin.com/in/michaellinlzc',
+        href: 'https://www.linkedin.com/in/michaellinlzc',
         label: 'Linkedin',
       },
       {
