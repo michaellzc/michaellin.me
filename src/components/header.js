@@ -18,7 +18,8 @@ class Header extends Component {
       <nav
         className="navbar"
         css={css`
-          margin-top: 1.5rem;
+          padding-top: 1.5rem;
+          background-color: #f5f5f5;
         `}
         role="navigation"
         aria-label="main navigation"
@@ -43,11 +44,12 @@ class Header extends Component {
           </div>
           <div
             id="navbar-default"
-            className={`navbar-menu ${isOpened ? 'is-active' : ''} ${css`
+            className={`navbar-menu ${isOpened ? 'is-active' : ''}`}
+            css={css`
               @media (max-width: 1024px) {
                 box-shadow: none !important;
               }
-            `}`}
+            `}
           >
             <div className="navbar-end">
               <Link to="/" className="navbar-item button is-text">

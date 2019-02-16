@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { css, Global } from '@emotion/core'
 import SEO from '../components/seo'
-import Layout from '../components/layout'
+import Layout from '../components/post-layout'
 import 'prismjs/themes/prism-tomorrow.css'
 
 // eslint-disable-next-line react/prop-types
@@ -23,19 +23,9 @@ const BlogPost = ({ data: { markdownRemark: post } }) => (
           overflow: auto;
           color: #ffffff;
         }
-        .content .tag,
-        .content .number {
-          display: inline;
-          padding: inherit;
-          font-size: inherit;
-          line-height: inherit;
-          text-align: inherit;
-          vertical-align: inherit;
-          border-radius: inherit;
-          font-weight: inherit;
-          white-space: inherit;
-          background: inherit;
-          margin: inherit;
+        .number {
+          font-size: 1em;
+          background-color: transparent;
         }
       `}
     />
