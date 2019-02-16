@@ -3,6 +3,8 @@ import { graphql } from 'gatsby'
 import { css, Global } from '@emotion/core'
 import SEO from '../components/seo'
 import Layout from '../components/post-layout'
+import { formatReadingTime } from '../utils/helpers'
+import { rhythm, scale } from '../utils/typography'
 import 'prismjs/themes/prism-tomorrow.css'
 
 // eslint-disable-next-line react/prop-types
@@ -40,6 +42,18 @@ const BlogPost = ({ data: { markdownRemark: post } }) => (
             `}
           >
             <h1>{post.frontmatter.title}</h1>
+            <p
+              css={css`
+
+                display: block;
+                ${scale(-1 / 5)};
+                margin-bottom: ${rhythm(1)} !important;
+                /* margin-top: ${rhythm(-4 / 5)}; */
+              `}
+            >
+              {post.frontmatter.date}
+              {` • ${formatReadingTime(post.timeToRead)}`}
+            </p>
             {/* eslint-disable-next-line react/no-danger */}
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </div>
@@ -61,6 +75,7 @@ export const query = graphql`
       id
       excerpt
       html
+      timeToRead
       frontmatter {
         title
         description
