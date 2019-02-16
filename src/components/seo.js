@@ -3,13 +3,14 @@ import Helmet from 'react-helmet'
 import { string } from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-const SEO = ({ title, description, url }) => (
+const SEO = ({ title, description, url, slug }) => (
   <StaticQuery
     query={graphql`
       query SEOQuery {
         site {
           siteMetadata {
             title
+            siteUrl
             author
             description
             keywords
@@ -22,9 +23,10 @@ const SEO = ({ title, description, url }) => (
       const seo = {
         title: title || meta.title,
         description: description || meta.description,
-        siteUrl: url || meta.url,
+        siteUrl: slug ? `${meta.siteUrl}${slug}` : meta.siteUrl,
         author: meta.author,
         keywords: meta.keywords,
+        twitter: meta.twitter,
       }
 
       return (

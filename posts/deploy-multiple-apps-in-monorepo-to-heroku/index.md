@@ -1,7 +1,7 @@
 ---
 date: '2019-02-16'
-title: 'Setup Heroku Monorepo Deployment'
-description: 'How to deploy multiple applications in monorepo with Heroku'
+title: 'How to deploy multiple apps in monorepo with Heroku'
+description: 'How to deploy multiple applications from a monolith repository with Heroku'
 ---
 
 Heroku is one of the biggest PaaS cloud service provider that helps developer to painless build, run, and operate applications.

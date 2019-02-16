@@ -6,11 +6,10 @@ const {
   GOOGLE_TAGMANAGER_ID,
 } = process.env
 const isNetlifyProduction = NETLIFY_ENV === 'production'
-const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 
 module.exports = {
   siteMetadata: {
-    siteUrl,
+    siteUrl: 'https://michaellin.me',
     title: 'Michael Lin · Full Stack Software Developer',
     author: 'Michael Lin',
     description: 'Michael Lin is a Software Developer at IBM working on CognitiveClass.ai, and a Computer Science student at the University of Alberta. His recent focus is on building modern web applications.',

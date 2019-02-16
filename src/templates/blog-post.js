@@ -11,6 +11,7 @@ const BlogPost = ({ data: { markdownRemark: post } }) => (
     <SEO
       title={post.frontmatter.title}
       description={post.frontmatter.description}
+      slug={post.fields.slug}
     />
     <Global
       styles={css`
@@ -64,6 +65,9 @@ export const query = graphql`
         title
         description
         date(formatString: "MMMM DD, YYYY")
+      }
+      fields {
+        slug
       }
     }
   }
