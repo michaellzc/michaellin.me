@@ -14,7 +14,7 @@ const Footer = () => (
         <Link to="/" className="button is-text level-item">
           Home
         </Link>
-        <Link to="/wip" className="button is-text level-item">
+        <Link to="/blogs" className="button is-text level-item">
           Blog
         </Link>
         <Link to="/wip" className="button is-text level-item">

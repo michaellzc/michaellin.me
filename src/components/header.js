@@ -53,7 +53,7 @@ class Header extends Component {
               <Link to="/" className="navbar-item button is-text">
                 Home
               </Link>
-              <Link to="/wip" className="navbar-item button is-text">
+              <Link to="/blogs" className="navbar-item button is-text">
                 Blog
               </Link>
               <Link to="/wip" className="navbar-item button is-text">

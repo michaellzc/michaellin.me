@@ -107,7 +107,21 @@ module.exports = {
         name: "posts",
       },
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-remark-responsive-iframe',
+          'gatsby-remark-smartypants',
+          {
+            resolve:  'gatsby-remark-prismjs',
+            options: {
+              classPrefix: 'gatsby-code-',
+            },
+          }
+        ],
+      }
+    },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {

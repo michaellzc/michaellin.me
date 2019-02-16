@@ -4,3 +4,5 @@ import noriegaTheme from 'typography-theme-noriega'
 const typography = new Typography(noriegaTheme)
 
 export default typography
+
+export const rhythm = typography.rhythm
