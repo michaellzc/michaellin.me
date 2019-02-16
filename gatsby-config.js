@@ -94,6 +94,10 @@ module.exports = {
         name: 'Resume',
         href: '/resume_en.pdf',
       },
+      {
+        name: 'Blog',
+        href: '/blogs'
+      }
     ],
   },
   plugins: [
