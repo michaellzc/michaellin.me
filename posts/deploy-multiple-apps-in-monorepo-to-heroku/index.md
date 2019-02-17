@@ -1,6 +1,7 @@
 ---
 date: '2019-02-16'
 title: 'How to deploy multiple apps in monorepo with Heroku'
+social_card_title: 'Monolith and Heroku: Monorepo buildpack'
 description: 'How to deploy multiple applications from a monolith repository with Heroku'
 ---
 

@@ -14,6 +14,7 @@ const BlogPost = ({ data: { markdownRemark: post } }) => (
       title={post.frontmatter.title}
       description={post.frontmatter.description}
       slug={post.fields.slug}
+      socialCardTitle={post.frontmatter.social_card_title}
     />
     <Global
       styles={css`
@@ -79,6 +80,7 @@ export const query = graphql`
       frontmatter {
         title
         description
+        social_card_title
         date(formatString: "MMMM DD, YYYY")
       }
       fields {

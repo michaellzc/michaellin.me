@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { string } from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-const SEO = ({ title, description, url, slug }) => (
+const SEO = ({ title, description, socialCardTitle, slug }) => (
   <StaticQuery
     query={graphql`
       query SEOQuery {
@@ -43,11 +43,32 @@ const SEO = ({ title, description, url, slug }) => (
           <meta property="og:url" content={seo.siteUrl} />
           <meta property="og:title" content={seo.title} />
           <meta property="og:description" content={seo.description} />
+          <meta
+            property="og:image"
+            content={
+              slug
+                ? `https://og-image.michaellin.me/${encodeURI(
+                    socialCardTitle
+                  )}.png`
+                : 'https://og-image.michaellin.me/.png'
+            }
+          />
 
           <meta name="twitter:url" content={seo.siteUrl} />
           <meta name="twitter:title" content={seo.title} />
           <meta name="twitter:description" content={seo.description} />
           <meta name="twitter:creator" content={seo.twitter} />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta
+            property="twitter:image"
+            content={
+              slug
+                ? `https://og-image.michaellin.me/${encodeURI(
+                    socialCardTitle
+                  )}.png`
+                : 'https://og-image.michaellin.me/.png'
+            }
+          />
         </Helmet>
       )
     }}

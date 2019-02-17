@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import { formatReadingTime } from '../utils/helpers'
 import { rhythm } from '../utils/typography'
 
@@ -9,6 +10,7 @@ const BlogsPage = ({ data }) => {
 
   return (
     <Layout>
+      <SEO />
       <div className="container">
         <div className="columns is-centered">
           <div className="column is-8">
