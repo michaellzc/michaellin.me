@@ -28,7 +28,7 @@ module.exports = {
       },
       {
         className: 'fab, twitter',
-        href: 'https://twitter.com/michaellin_lzc',
+        href: 'https://twitter.com/_michaellin',
         label: 'Twitter',
       },
       {
