@@ -104,6 +104,12 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-emotion',
     {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        exclude: ['/wip', '/references']
+      }
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/posts`,
