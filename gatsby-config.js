@@ -15,6 +15,7 @@ module.exports = {
     description: 'Michael Lin is a Software Developer at IBM working on CognitiveClass.ai, and a Computer Science student at the University of Alberta. His recent focus is on building modern web applications.',
     keywords: 'Developer, programming, react, node, javascript, edmonton, toronto',
     twitter: '@michaellin_lzc',
+    disqus: 'exiasr',
     contacts: [
       {
         className: 'fab, github',
