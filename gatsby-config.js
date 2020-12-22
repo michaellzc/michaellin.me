@@ -103,7 +103,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-emotion',
+    'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
@@ -159,13 +159,6 @@ module.exports = {
         id: GOOGLE_TAGMANAGER_ID,
         includeInDevelopment: false,
       },
-    },
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: 'src/utils/typography',
-        omitGoogleFont: true,
-      },
-    },
+    }
   ],
 }
