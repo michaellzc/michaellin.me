@@ -17,7 +17,9 @@ const BlogsPage = ({ data }) => {
               <Link to={node.fields.slug}>
                 <a className="mt-2 block space-y-2">
                   <p className="text-2xl font-bold text-text">{title}</p>
-                  <p className="text-2xl text-text">{node.frontmatter.date}</p>
+                  <p className="text-lg md:text-xl lg:text-xl xl:text-xl 2xl:text-xl text-text uppercase">
+                    {node.frontmatter.date}
+                  </p>
                   <p
                     className="text-xl text-text hidden sm:block md:block lg:block xl:block 2xl:block"
                     dangerouslySetInnerHTML={{ __html: node.excerpt }}
