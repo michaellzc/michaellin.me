@@ -1,15 +1,17 @@
 import React from 'react'
+import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Layout from '../components/hero-layout'
-import Contact from '../components/contact'
 
 const NotFoundPage = () => (
   <Layout>
     <SEO title="Ooops Snap" />
-    <div className="container has-text-centered">
-      <h1 className="title">PAGE NOT FOUND</h1>
-      <Contact />
-    </div>
+    <section className="max-w-7xl h-full mx-auto py-12 px-4 sm:px-6 flex flex-col justify-center md:flex-row md:items-center md:justify-center lg:px-8">
+      <div className="self-center text-xl py-24">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl tracking-tight text-text">
+          PAGE NOT FOUND
+        </h1>
+      </div>
+    </section>
   </Layout>
 )
 

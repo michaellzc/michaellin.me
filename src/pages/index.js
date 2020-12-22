@@ -1,18 +1,12 @@
 import React from 'react'
-import SEO from '../components/seo'
-import Layout from '../components/hero-layout'
+import Layout from '../components/layout'
 import Intro from '../components/intro'
-import Contact from '../components/contact'
-import Menu from '../components/menu'
+import SEO from '../components/seo'
 
 const IndexPage = () => (
-  <Layout>
+  <Layout isHeaderShown={false}>
     <SEO />
-    <div className="container has-text-centered">
-      <Intro />
-      <Contact />
-      <Menu />
-    </div>
+    <Intro />
   </Layout>
 )
 

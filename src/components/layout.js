@@ -1,24 +1,21 @@
 import React from 'react'
-import { node } from 'prop-types'
 import Footer from './footer'
 import Header from './header'
-import 'bulma/css/bulma.css'
-import 'typeface-lato'
 
-const Layout = ({ children }) => (
-  <section className="hero is-light is-fullheight">
-    <div className="hero-head">
-      <Header />
-    </div>
-    <div className="hero-body">{children}</div>
-    <div className="hero-foot">
-      <Footer />
-    </div>
-  </section>
-)
-
-Layout.propTypes = {
-  children: node.isRequired,
+function Layout({ children, isHeaderShown = true, isHero = true }) {
+  return (
+    <main className="relative md:px-20 lg:px-24 min-h-screen h-screen flex flex-col bg-white">
+      {isHeaderShown ? (
+        <div className="flex-shrink">
+          <Header />
+        </div>
+      ) : null}
+      <div className={`flex-grow ${isHero ? 'h-0' : ''}`}>{children}</div>
+      <div className="flex-shrink">
+        <Footer />
+      </div>
+    </main>
+  )
 }
 
 export default Layout

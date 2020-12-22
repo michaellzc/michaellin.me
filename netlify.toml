@@ -1,6 +1,6 @@
 [build.environment]
-  YARN_VERSION = "1.12.3"
-  NODE_VERSION = "10"
+  YARN_VERSION = "1.22.10"
+  NODE_VERSION = "12"
   YARN_FLAGS = "--pure-lockfile --verbose"
 
 [context.production.environment]
