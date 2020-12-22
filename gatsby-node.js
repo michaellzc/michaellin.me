@@ -36,9 +36,24 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: post.node.fields.slug,
         previous,
         next,
+        isHero: false,
       },
     })
   })
+}
+
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage } = actions
+
+  if (page.path === '/') {
+    createPage({
+      ...page,
+      context: {
+        ...page.context,
+        isHeaderShown: false,
+      },
+    })
+  }
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

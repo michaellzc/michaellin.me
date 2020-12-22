@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { DiscussionEmbed } from 'disqus-react'
 import SEO from '../components/seo'
-import Layout from '../components/layout'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
 import 'prismjs/themes/prism-tomorrow.css'
 
@@ -10,7 +9,7 @@ const BlogPost = ({ data: { markdownRemark: post } }) => {
   const { disqus } = useSiteMetadata()
 
   return (
-    <Layout isHero={false}>
+    <>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
@@ -35,7 +34,7 @@ const BlogPost = ({ data: { markdownRemark: post } }) => {
           />
         ) : null}
       </article>
-    </Layout>
+    </>
   )
 }
 

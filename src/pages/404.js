@@ -1,9 +1,8 @@
 import React from 'react'
-import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const NotFoundPage = () => (
-  <Layout>
+  <>
     <SEO title="Ooops Snap" />
     <section className="max-w-7xl h-full mx-auto py-12 px-4 sm:px-6 flex flex-col justify-center md:flex-row md:items-center md:justify-center lg:px-8">
       <div className="self-center text-xl py-24">
@@ -12,7 +11,7 @@ const NotFoundPage = () => (
         </h1>
       </div>
     </section>
-  </Layout>
+  </>
 )
 
 export default NotFoundPage

@@ -104,6 +104,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-postcss',
+    `gatsby-plugin-layout`,
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
