@@ -45,7 +45,7 @@ const Footer = () => (
           className="text-gray-400 hover:text-text"
           target="_blank"
         >
-          <span className="sr-only">Facebook</span>
+          <span className="sr-only">Email</span>
           <i className="fas fa-envelope fa-2x" />
         </a>
       </div>
