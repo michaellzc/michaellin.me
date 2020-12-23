@@ -1,12 +1,12 @@
 import React from 'react'
 
 const Footer = () => (
-  <footer className="bg-white">
+  <footer>
     <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
       <div className="flex justify-center space-x-6 md:order-2">
         <a
           href="https://www.instagram.com/_michaelllin/"
-          className="text-gray-400 hover:text-text"
+          className="text-gray-400 hover:text-dark dark:hover:text-light"
           target="_blank"
         >
           <span className="sr-only">Instagram</span>
@@ -15,7 +15,7 @@ const Footer = () => (
 
         <a
           href="https://twitter.com/_mlzc"
-          className="text-gray-400 hover:text-text"
+          className="text-gray-400 hover:text-dark dark:hover:text-light"
           target="_blank"
         >
           <span className="sr-only">Twitter</span>
@@ -24,7 +24,7 @@ const Footer = () => (
 
         <a
           href="https://github.com/ExiaSR"
-          className="text-gray-400 hover:text-text"
+          className="text-gray-400 hover:text-dark dark:hover:text-light"
           target="_blank"
         >
           <span className="sr-only">GitHub</span>
@@ -33,7 +33,7 @@ const Footer = () => (
 
         <a
           href="https://www.linkedin.com/in/mlzc"
-          className="text-gray-400 hover:text-text"
+          className="text-gray-400 hover:text-dark dark:hover:text-light"
           target="_blank"
         >
           <span className="sr-only">Linkedin</span>
@@ -42,7 +42,7 @@ const Footer = () => (
 
         <a
           href="mailto:hi@michaellin.me"
-          className="text-gray-400 hover:text-text"
+          className="text-gray-400 hover:text-dark dark:hover:text-light"
           target="_blank"
         >
           <span className="sr-only">Email</span>

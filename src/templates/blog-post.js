@@ -17,12 +17,12 @@ const BlogPost = ({ data: { markdownRemark: post } }) => {
         socialCardTitle={post.frontmatter.social_card_title}
       />
       <article className="max-w-5xl h-full space-y-12 mx-auto py-12 px-4 sm:px-6">
-        <h1 className="max-w-prose mx-auto block text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        <h1 className="max-w-prose mx-auto block text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-light">
           {post.frontmatter.title}
         </h1>
         <div
           dangerouslySetInnerHTML={{ __html: post.html }}
-          className="mt-6 prose prose-text prose-lg text-text mx-auto antialiased"
+          className="mt-6 prose prose-text prose-lg mx-auto antialiased dark:prose-dark"
         />
         {process.env.NODE_ENV === 'production' ? (
           <DiscussionEmbed

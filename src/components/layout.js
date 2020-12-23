@@ -4,7 +4,7 @@ import Header from './header'
 
 function Layout({ children, isHeaderShown = true, isHero = true }) {
   return (
-    <main className="relative md:px-20 lg:px-24 min-h-screen h-screen flex flex-col bg-white">
+    <main className="relative md:px-20 lg:px-24 min-h-screen h-screen flex flex-col">
       {isHeaderShown ? (
         <div className="flex-shrink">
           <Header />
