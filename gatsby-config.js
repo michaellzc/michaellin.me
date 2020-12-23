@@ -105,6 +105,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-postcss',
     `gatsby-plugin-layout`,
+    `gatsby-plugin-sharp`,
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
@@ -125,11 +126,26 @@ module.exports = {
           'gatsby-remark-responsive-iframe',
           'gatsby-remark-smartypants',
           {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank"
+            }
+          },
+          {
             resolve:  'gatsby-remark-prismjs',
             options: {
               classPrefix: 'gatsby-code-',
             },
-          }
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 590,
+            },
+          },
         ],
       }
     },

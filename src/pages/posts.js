@@ -14,7 +14,7 @@ const BlogsPage = ({ data }) => {
           return (
             <div key={node.fields.slug}>
               <Link to={node.fields.slug}>
-                <a className="mt-2 block space-y-2">
+                <div className="mt-2 block space-y-2">
                   <p className="text-2xl font-bold text-text">{title}</p>
                   <p className="text-lg md:text-xl lg:text-xl xl:text-xl 2xl:text-xl text-text uppercase">
                     {node.frontmatter.date}
@@ -23,7 +23,7 @@ const BlogsPage = ({ data }) => {
                     className="text-xl text-text hidden sm:block md:block lg:block xl:block 2xl:block"
                     dangerouslySetInnerHTML={{ __html: node.excerpt }}
                   />
-                </a>
+                </div>
               </Link>
             </div>
           )
