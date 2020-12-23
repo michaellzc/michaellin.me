@@ -9,8 +9,8 @@ module.exports = {
         serif: ['IBM Plex Serif', ...defaultTheme.fontFamily.serif]
       },
       colors: {
-        light: '#C7D5D8',
-        dark: '#1F2B34'
+        light: 'var(--color-light)',
+        dark: 'var(--color-dark)'
       },
       typography: (theme) => ({
         dark: {

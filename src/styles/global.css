@@ -1,3 +1,18 @@
+:root {
+  --color-light: #c7d5d8;
+  --color-dark: #1f2b34;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.prose a.anchor {
+  fill: var(--color-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose a.anchor {
+    fill: var(--color-light);
+  }
+}

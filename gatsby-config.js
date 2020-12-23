@@ -125,6 +125,7 @@ module.exports = {
         plugins: [
           'gatsby-remark-responsive-iframe',
           'gatsby-remark-smartypants',
+          'gatsby-remark-autolink-headers',
           {
             resolve: "gatsby-remark-external-links",
             options: {
