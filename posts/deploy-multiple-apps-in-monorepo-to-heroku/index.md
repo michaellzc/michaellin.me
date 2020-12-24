@@ -5,9 +5,9 @@ social_card_title: 'Monolith and Heroku: Monorepo buildpack'
 description: 'How to deploy multiple applications from a monolith repository with Heroku'
 ---
 
-Heroku is one of the biggest PaaS cloud service provider that helps developer to painless build, run, and operate applications.
+Heroku is one of the biggest PaaS cloud service providers that helps developers to painlessly build, run, and operate applications.
 
-The usual way to setup a Heroku application is one repo per application. Monorepo, one of the many buzzwords in the developer community. There are both advantage and disadvantage of using monorepo to manage your projects. Anyway, this is not the point of this article. We will be focusing on deploying multiple applications in a monorepo to Heroku.
+The usual way to setup a Heroku application is one repo per application. Monorepo is one of the many buzzwords in the developer community. There are both advantages and disadvantages of using monorepo to manage your projects. Anyway, this is not the point of this article. We will be focusing on deploying multiple applications in a monorepo to Heroku.
 
 Let's say you have a single Git repository that contains a Django application and a React application with client side routing. Moreover, you don't want to serve your React application from Django, instead you would like to use another Heroku instance to serve your client application.
 
@@ -72,7 +72,7 @@ app.get('*', function(req, res) {
 app.listen(PORT, () => console.log(`Listening on :${PORT}`))
 ```
 
-Also, add a new `heroku-postbuild` script to `client/package.json` to let Heroku knows how to build your React app.
+Also, add a new `heroku-postbuild` script to `client/package.json` to let Heroku know how to build your React app.
 
 ```json
 {
