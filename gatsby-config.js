@@ -12,8 +12,10 @@ module.exports = {
     siteUrl: 'https://michaellin.me',
     title: 'Michael Lin · Full Stack Software Developer',
     author: 'Michael Lin',
-    description: 'Michael Lin is a Software Developer at IBM working on CognitiveClass.ai, and a Computer Science student at the University of Alberta. His recent focus is on building modern web applications.',
-    keywords: 'Developer, programming, react, node, javascript, edmonton, toronto',
+    description:
+      'Michael Lin is a Software Developer at IBM working on CognitiveClass.ai, and a Computer Science student at the University of Alberta. His recent focus is on building modern web applications.',
+    keywords:
+      'Developer, programming, react, node, javascript, edmonton, toronto',
     twitter: '@michaellin_lzc',
     disqus: 'exiasr',
     contacts: [
@@ -56,8 +58,8 @@ module.exports = {
         icon: 'https://luojia.me/favicon.ico',
         handler: {
           title: '@JiaJiaJiang',
-          href: 'https://github.com/JiaJiaJiang'
-        }
+          href: 'https://github.com/JiaJiaJiang',
+        },
       },
       {
         title: 'BlackGlory',
@@ -66,8 +68,8 @@ module.exports = {
         icon: 'https://www.blackglory.me/assets/favicon.ico',
         handler: {
           title: '@BlackGlory',
-          href: 'https://github.com/BlackGlory'
-        }
+          href: 'https://github.com/BlackGlory',
+        },
       },
       {
         title: 'DigitalOcean',
@@ -76,8 +78,8 @@ module.exports = {
         icon: 'https://www.digitalocean.com/favicon.ico',
         handler: {
           title: '@digitalocean',
-          href: 'https://twitter.com/digitalocean'
-        }
+          href: 'https://twitter.com/digitalocean',
+        },
       },
       {
         title: 'Vultr',
@@ -86,8 +88,8 @@ module.exports = {
         icon: 'https://www.vultr.com/dist/img/brand/logo_v_onwhite.svg',
         handler: {
           title: '@Vultr',
-          href: 'https://twitter.com/vultr'
-        }
+          href: 'https://twitter.com/vultr',
+        },
       },
     ],
     menu: [
@@ -97,8 +99,8 @@ module.exports = {
       },
       {
         name: 'Blog',
-        href: '/blogs'
-      }
+        href: '/blogs',
+      },
     ],
   },
   plugins: [
@@ -109,14 +111,14 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
-        exclude: ['/wip', '/references']
-      }
+        exclude: ['/wip', '/references'],
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/posts`,
-        name: "posts",
+        name: 'posts',
       },
     },
     {
@@ -127,13 +129,13 @@ module.exports = {
           'gatsby-remark-smartypants',
           'gatsby-remark-autolink-headers',
           {
-            resolve: "gatsby-remark-external-links",
+            resolve: 'gatsby-remark-external-links',
             options: {
-              target: "_blank"
-            }
+              target: '_blank',
+            },
           },
           {
-            resolve:  'gatsby-remark-prismjs',
+            resolve: 'gatsby-remark-prismjs',
             options: {
               classPrefix: 'gatsby-code-',
             },
@@ -145,11 +147,11 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               maxWidth: 590,
-              backgroundColor: 'transparent'
+              backgroundColor: 'transparent',
             },
           },
         ],
-      }
+      },
     },
     {
       resolve: 'gatsby-plugin-robots-txt',
@@ -178,6 +180,6 @@ module.exports = {
         id: GOOGLE_TAGMANAGER_ID,
         includeInDevelopment: false,
       },
-    }
+    },
   ],
 }
