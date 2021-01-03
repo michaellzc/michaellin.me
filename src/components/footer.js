@@ -8,6 +8,7 @@ const Footer = () => (
           href="https://www.instagram.com/_michaelllin/"
           className="text-gray-400 hover:text-dark dark:hover:text-light"
           target="_blank"
+          rel="noreferrer"
         >
           <span className="sr-only">Instagram</span>
           <i className="fab fa-instagram fa-2x" />
@@ -17,6 +18,7 @@ const Footer = () => (
           href="https://twitter.com/_mlzc"
           className="text-gray-400 hover:text-dark dark:hover:text-light"
           target="_blank"
+          rel="noreferrer"
         >
           <span className="sr-only">Twitter</span>
           <i className="fab fa-twitter fa-2x" />
@@ -26,6 +28,7 @@ const Footer = () => (
           href="https://github.com/ExiaSR"
           className="text-gray-400 hover:text-dark dark:hover:text-light"
           target="_blank"
+          rel="noreferrer"
         >
           <span className="sr-only">GitHub</span>
           <i className="fab fa-github fa-2x" />
@@ -35,6 +38,7 @@ const Footer = () => (
           href="https://www.linkedin.com/in/mlzc"
           className="text-gray-400 hover:text-dark dark:hover:text-light"
           target="_blank"
+          rel="noreferrer"
         >
           <span className="sr-only">Linkedin</span>
           <i className="fab fa-linkedin fa-2x" />
@@ -44,6 +48,7 @@ const Footer = () => (
           href="mailto:hi@michaellin.me"
           className="text-gray-400 hover:text-dark dark:hover:text-light"
           target="_blank"
+          rel="noreferrer"
         >
           <span className="sr-only">Email</span>
           <i className="fas fa-envelope fa-2x" />

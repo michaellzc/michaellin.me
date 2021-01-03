@@ -32,7 +32,9 @@ function Intro() {
           BLOG
         </Link>
         <a
-          href="/resume_en.pdf"
+          target="_blank"
+          rel="noreferrer"
+          href="https://assets.michaellin.me/misc/resume.pdf"
           className="flex items-center px-3 py-2 font-normal rounded-md text-2xl leading-10 hover:underline"
         >
           RESUME
