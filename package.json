@@ -7,6 +7,7 @@
     "node": ">=12"
   },
   "dependencies": {
+    "@fontsource/ibm-plex-serif": "^4.1.0",
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "@tailwindcss/typography": "^0.3.1",
     "autoprefixer": "^10.1.0",
