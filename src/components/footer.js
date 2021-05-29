@@ -25,7 +25,7 @@ const Footer = () => (
         </a>
 
         <a
-          href="https://github.com/ExiaSR"
+          href="https://github.com/michaellzc"
           className="text-gray-400 hover:text-dark dark:hover:text-light"
           target="_blank"
           rel="noreferrer"
