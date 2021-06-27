@@ -17,7 +17,7 @@ Our 5-node vault cluster is highly available by using the provided [Integrated S
 
 Unfortunately, the open source vault does not provide an out-of-the-box automated backup solution. It is only offer in [Vault Enterprise][]. Apprently, our team doesn't have a deep pocket to pay for the license fee.
 
-That said, the backup feature is still accessible from cli and HTTP API, just not automated. We utilize the [snapshot save][] from vault cli to perform automated backup using a [Kubernetes CronJob][] running along with the vault Kubernetes deployment. The cronjob will periodically take a snapshot of the vault cluster and upload to our S3 storage.
+That said, the backup feature is still accessible from cli and HTTP API, just not automated. We utilize the [snapshot save][] from vault cli to perform automated backup using a [CronJob][] running along with the vault Kubernetes deployment. The cronjob will periodically take a snapshot of the vault cluster and upload to our S3 storage.
 
 ## How?
 
@@ -86,7 +86,7 @@ data:
 
 Let's create the [CronJob][] that actually does the work.
 
-Notice we configure `VAULT_ADDR` environment variable to `http://vault-active.vault.svc.cluster.local:8200`. Notice we use the `vault-active` [Service][] to make sure the snapshot request is made against the `leader` node, assuming you have enabled [Service Registration][] (this is the [default](https://github.com/hashicorp/vault-helm/blob/f67b844d3027b981d12a56957f5fbcbf85ec5adc/values.yaml#L601)). The exact url may vary depending on your vault helm chart deployment release name and targer namespace, [learn more](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/).
+We configure `VAULT_ADDR` environment variable to `http://vault-active.vault.svc.cluster.local:8200`. Using `vault-active` [Service][] can make sure the snapshot request is made against the `leader` node, assuming you have enabled [Service Registration][], which is the [default](https://github.com/hashicorp/vault-helm/blob/f67b844d3027b981d12a56957f5fbcbf85ec5adc/values.yaml#L601). The exact url may vary depending on your vault helm chart deployment release name and targer namespace, [learn more](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/).
 
 > I may have over-engineered the cronjob by using multiple containers to perform a simple backup and upload task. The intention is to avoid building custom images and I don't want to maintain yet another image.
 
@@ -117,7 +117,7 @@ spec:
             # - ship `jq` static binary in a standalone image and mount it using a shared volume from `initContainers`
             # - build your custom `vault` image
             - |
-              curl -sS https://webinstall.dev/jq | bash
+              curl -sS https://webinstall.dev/jq | sh
               export VAULT_TOKEN=$(vault write auth/approle/login role_id=$VAULT_APPROLE_ROLE_ID secret_id=$VAULT_APPROLE_SECRET_ID -format=json | /jq/jq -r .auth.client_token);
               vault operator raft snapshot save /share/vault-raft.snap; 
             envFrom:
@@ -155,7 +155,7 @@ spec:
 
 ### Wrapping Up
 
-Now you have all resources needed to deploy your own automated vault backup for Raft backend. You can either just run `kubectl apply -f *` or build your own Helm Chart and distribute on your own private chart repository.
+Now you have all resources needed to automate vault backup for Raft backend. You can either just run `kubectl apply -f *` or build your own Helm Chart and distribute on your private chart repository.
 
 [AppRole]: https://www.vaultproject.io/docs/auth/approle
 [Block Storage]: https://cloud.ibm.com/docs/vpc?topic=vpc-block-storage-about
@@ -164,9 +164,9 @@ Now you have all resources needed to deploy your own automated vault backup for 
 [Vault Helm Chart]: https://github.com/hashicorp/vault-helm
 [Integrated Storage Raft backend]: https://www.vaultproject.io/docs/configuration/storage/raft
 [Kubernetes StatefulSet]: https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/
-[Kubernetes CronJob]: https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/
+[CronJob]: https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/
 [PersistentVolumeClaim]: https://kubernetes.io/docs/concepts/storage/persistent-volumes/
-[snapshot save]: [https://www.vaultproject.io/docs/commands/operator/raft#snapshot-save]
+[snapshot save]: https://www.vaultproject.io/docs/commands/operator/raft#snapshot-save
 [Secrets]: https://kubernetes.io/docs/concepts/configuration/secret/
 [Service]: https://kubernetes.io/docs/concepts/services-networking/service/
 [Service Registration]: https://www.vaultproject.io/docs/configuration/service-registration/kubernetes#kubernetes-service-registration
