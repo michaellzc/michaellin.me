@@ -4,7 +4,7 @@ import Header from '../components/header'
 
 function Layout({
   children,
-  pageContext: { isHeaderShown = true, isHero = true },
+  pageContext: { isHeaderShown = true, isFooterShown = true, isHero = true },
 }) {
   return (
     <main className="relative md:px-20 lg:px-24 min-h-screen h-screen flex flex-col">
@@ -14,9 +14,11 @@ function Layout({
         </div>
       ) : null}
       <div className={`flex-grow ${isHero ? 'h-0' : ''}`}>{children}</div>
-      <div className="flex-shrink">
-        <Footer />
-      </div>
+      {isFooterShown ? (
+        <div className="flex-shrink">
+          <Footer />
+        </div>
+      ) : null}
     </main>
   )
 }

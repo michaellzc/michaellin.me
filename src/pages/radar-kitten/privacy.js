@@ -22,11 +22,19 @@ const RadarKittenPrivacyPage = () => (
         <ul>
           <li>
             We use{' '}
-            <a href="https://www.revenuecat.com" target="_blank">
+            <a
+              href="https://www.revenuecat.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               RevenueCat
             </a>{' '}
             to manage payment. RevenueCat's Privacy Policy can be{' '}
-            <a href="https://www.revenuecat.com/privacy" target="_blank">
+            <a
+              href="https://www.revenuecat.com/privacy"
+              target="_blank"
+              rel="noreferrer"
+            >
               found here
             </a>
             . We are unable to associate you with RevenueCat's records since

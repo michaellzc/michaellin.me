@@ -53,6 +53,16 @@ exports.onCreatePage = ({ page, actions }) => {
         isHeaderShown: false,
       },
     })
+  } else if (page.path === '/radar-kitten/privacy/') {
+    createPage({
+      ...page,
+      context: {
+        ...page.context,
+        isHeaderShown: false,
+        isFooterShown: true,
+        isHero: false,
+      },
+    })
   }
 }
 
