@@ -5,8 +5,6 @@ social_card_title: 'How to backup Hashicorp Vault with Raft storage on Kubernete
 description: "How to backup Hashicorp Vault with Raft storage on Kubernetes"
 ---
 
-## Context
-
 Our team is experimenting with [Hashicorp Vault][] as our new credentials management solution. Thanks to the offical [Vault Helm Chart][], we are able to get an almost production-ready vault cluster running on our Kubernetes cluster with minimal effort.
 
 ## Architecture

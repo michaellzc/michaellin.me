@@ -1,60 +1,24 @@
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = 'https://michaellin.me',
-  DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
-  CONTEXT: NETLIFY_ENV = NODE_ENV,
   GOOGLE_TAGMANAGER_ID,
 } = process.env
-const isNetlifyProduction = NETLIFY_ENV === 'production'
 
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://michaellin.me',
-    title: 'Michael Lin · Full Stack Software Developer',
+    title: 'Michael Lin · Software Engineer',
     author: 'Michael Lin',
     description:
-      'Michael Lin is a Software Developer at IBM working on CognitiveClass.ai, and a Computer Science student at the University of Alberta. His recent focus is on building modern web applications.',
+      'Michael Lin is a Software Engineer at Sourcegraph building infrastructure. He graduated from the University of Alberta with a BSc in Computer Science. Prior to Sourcegraph, he worked on Kubernetes and web stuff at IBM. He is passionate about building tools for developers and has contributed to open source projects such as Linkerd, better-opn, and more',
     keywords:
-      'Developer, programming, react, node, javascript, edmonton, toronto',
-    twitter: '@michaellin_lzc',
+      'Developer, programming, DevOps',
+    twitter: '@_mlzc',
     disqus: 'exiasr',
-    contacts: [
-      {
-        className: 'fab, github',
-        href: 'https://github.com/ExiaSR',
-        label: 'Github',
-      },
-      {
-        className: 'fab, linkedin',
-        href: 'https://www.linkedin.com/in/michaellinlzc',
-        label: 'Linkedin',
-      },
-      {
-        className: 'fab, twitter',
-        href: 'https://twitter.com/_michaellin',
-        label: 'Twitter',
-      },
-      {
-        className: 'fab, keybase',
-        href: 'https://keybase.io/exiasr',
-        label: 'Keybase',
-      },
-      {
-        className: 'fab, telegram',
-        href: 'https://telegram.me/ExiaSR',
-        label: 'Telegram',
-      },
-      {
-        className: 'fas, envelope',
-        href: 'mailto:hi@michaellin.me',
-        label: 'Email',
-      },
-    ],
     references: [
       {
         title: 'Luojia',
         href: 'https://luojia.me',
-        description: '佳佳酱 | 跨次元日常卖萌',
+        description: '佳佳酱 | 大龄单身狗的日常',
         icon: 'https://luojia.me/favicon.ico',
         handler: {
           title: '@JiaJiaJiang',
@@ -64,44 +28,14 @@ module.exports = {
       {
         title: 'BlackGlory',
         href: 'https://www.blackglory.me',
-        description: 'Experimental Web Component set @MudElements maintainer',
+        description: 'His digital garden',
         icon: 'https://www.blackglory.me/assets/favicon.ico',
         handler: {
           title: '@BlackGlory',
           href: 'https://github.com/BlackGlory',
         },
-      },
-      {
-        title: 'DigitalOcean',
-        href: 'https://m.do.co/c/faff46d8cc4b',
-        description: 'Get $100 credits over 60 days',
-        icon: 'https://www.digitalocean.com/favicon.ico',
-        handler: {
-          title: '@digitalocean',
-          href: 'https://twitter.com/digitalocean',
-        },
-      },
-      {
-        title: 'Vultr',
-        href: 'http://www.vultr.com/?ref=6900414',
-        description: 'Get $10 credits',
-        icon: 'https://www.vultr.com/dist/img/brand/logo_v_onwhite.svg',
-        handler: {
-          title: '@Vultr',
-          href: 'https://twitter.com/vultr',
-        },
-      },
-    ],
-    menu: [
-      {
-        name: 'Resume',
-        href: '/resume_en.pdf',
-      },
-      {
-        name: 'Blog',
-        href: '/blogs',
-      },
-    ],
+      }
+    ]
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -156,7 +90,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        resolveEnv: () => NETLIFY_ENV,
+        resolveEnv: () => NODE_ENV,
         env: {
           production: {
             policy: [{ userAgent: '*', allow: '/' }],

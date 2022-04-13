@@ -5,8 +5,6 @@ social_card_title: 'A combined approach using gettext and Rails I18n for Rails I
 description: "A combined approach using gettext and Rails I18n for Rails Internationalization"
 ---
 
-## Context
-
 With the increasing need for e-learning solutions in the pandemic era, our team at IBM is seeking to help organizations all around the world to host and operate their own e-learning platforms through our e-learning platform, [Cognitive Class](https://cognitiveclass.ai/business).
 
 GLaDOS is a Ruby on Rails application that acts as the user interface and the administrative management console of Cognitive Class. One of the technical debts we have with GLaDOS is its poor handling of strings, making it hard to provide localized platforms and interfaces for learners who don't speak English. In order to expand our business into non-English speaking countries, we are currently in the process of bringing internationalization (i18n) support to GLaDOS. In this blog post, I will discuss the process of i18n for GLaDOS, as well as integrating GLaDOS with Pontoon, an open source localization platform offered by Mozilla.

@@ -13,6 +13,11 @@ export const useSiteMetadata = () => {
             author
             twitter
             disqus
+            references {
+              title
+              href
+              description
+            }
           }
         }
       }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 const Footer = () => (
   <footer>
@@ -53,6 +54,14 @@ const Footer = () => (
           <span className="sr-only">Email</span>
           <i className="fas fa-envelope fa-2x" />
         </a>
+
+        <Link
+          to="/links"
+          className="text-gray-400 hover:text-dark dark:hover:text-light"
+        >
+          <span className="sr-only">Friends</span>
+          <i class="fas fa-globe fa-2x"></i>
+        </Link>
       </div>
       <div className="mt-8 md:mt-0 md:order-1">
         <p className="text-center text-base text-gray-400">
